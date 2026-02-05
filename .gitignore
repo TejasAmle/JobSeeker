@@ -1,0 +1,36 @@
+# Environment variables
+.env
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Logs
+logs/
+*.log
+
+# Database
+data/*.db
+data/*.db-journal
+
+# WhatsApp session
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Cache files
+data/career-urls-cache.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/

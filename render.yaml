@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: job-hunter-agent
+    env: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: AGENT_ENABLED
+        value: true
+      - key: LOG_LEVEL
+        value: info
+      - key: PORT
+        value: 3000
+      - key: SCRAPE_INTERVAL_MINUTES
+        value: 30
+      - key: NOTIFY_THRESHOLD
+        value: 60
+      - key: MIN_SALARY_LPA
+        value: 25
+      - key: WHATSAPP_ENABLED
+        value: true
+      - key: WHATSAPP_NUMBER
+        value: 919910282204
+      - key: KEEP_ALIVE_ENABLED
+        value: true
+      # Secrets (set these in Render dashboard):
+      - key: GMAIL_ADDRESS
+        sync: false
+      - key: GMAIL_APP_PASSWORD
+        sync: false
+    disk:
+      name: data-disk
+      mountPath: /app/data
+      sizeGB: 1
