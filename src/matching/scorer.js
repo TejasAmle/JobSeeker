@@ -203,21 +203,21 @@ function scoreExperienceFit(description, title) {
       const min = parseInt(match[1]);
       const max = match[2] ? parseInt(match[2]) : min;
 
-      // Tejas has 4 years experience
-      const tejasExp = config.candidate.experience;
+      // Candidate's experience from config
+      const candidateExp = config.candidate.experience;
 
       // Perfect fit: 3-7 years
-      if (min <= tejasExp && max >= tejasExp) {
+      if (min <= candidateExp && max >= candidateExp) {
         return 15;
       }
 
       // Close fit: 2-5 or 5-8
-      if ((min <= tejasExp + 1 && max >= tejasExp - 1)) {
+      if ((min <= candidateExp + 1 && max >= candidateExp - 1)) {
         return 12;
       }
 
       // Acceptable: asking for up to 8 years
-      if (max <= 8 && min <= tejasExp) {
+      if (max <= 8 && min <= candidateExp) {
         return 10;
       }
 

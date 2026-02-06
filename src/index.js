@@ -4,7 +4,6 @@
  * Job Hunter Agent - Main Entry Point
  * Autonomous job search agent for Product Manager roles
  *
- * Author: Tejas
  * Description: Scrapes job boards, scores relevance, and sends notifications
  */
 

@@ -25,7 +25,7 @@ export const config = {
   // WhatsApp settings
   whatsapp: {
     enabled: process.env.WHATSAPP_ENABLED === 'true',
-    number: process.env.WHATSAPP_NUMBER || '919910282204',
+    number: process.env.WHATSAPP_NUMBER,
   },
 
   // Scraping settings
@@ -39,12 +39,12 @@ export const config = {
     minSalaryLPA: parseInt(process.env.MIN_SALARY_LPA || '25', 10),
   },
 
-  // Candidate profile
+  // Candidate profile (customize in .env or here)
   candidate: {
-    name: 'Tejas',
-    experience: 4,
-    email: 'tejas.amle71@gmail.com',
-    whatsapp: '+91 9910282204',
+    name: process.env.CANDIDATE_NAME || 'Your Name',
+    experience: parseInt(process.env.CANDIDATE_EXPERIENCE || '4', 10),
+    email: process.env.GMAIL_ADDRESS || 'your_email@gmail.com',
+    whatsapp: process.env.WHATSAPP_NUMBER || 'your_phone_number',
     skills: [
       'Product Management',
       'B2B SaaS',
@@ -81,7 +81,7 @@ export const config = {
   paths: {
     data: path.join(__dirname, '..', 'data'),
     logs: path.join(__dirname, '..', 'logs'),
-    watchlistExcel: path.join(__dirname, '..', 'PM_Companies_Comprehensive_Tejas.xlsx'),
+    watchlistExcel: path.join(__dirname, '..', 'companies_watchlist.xlsx'),
     database: path.join(__dirname, '..', 'data', 'jobs.db'),
     careersCache: path.join(__dirname, '..', 'data', 'career-urls-cache.json'),
   },

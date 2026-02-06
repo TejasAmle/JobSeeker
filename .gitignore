@@ -1,6 +1,9 @@
 # Environment variables
 .env
 
+# Original PRD with personal information
+promptPrd.md
+
 # Dependencies
 node_modules/
 package-lock.json

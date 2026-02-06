@@ -28,7 +28,7 @@ cp .env.example .env
 Then open `.env` in any text editor and update:
 
 ```env
-GMAIL_ADDRESS=tejas.amle71@gmail.com
+GMAIL_ADDRESS=your_email@gmail.com
 GMAIL_APP_PASSWORD=abcdefghijklmnop    # Paste your 16-char password here (no spaces)
 ```
 
@@ -75,8 +75,8 @@ The agent will:
 ## 🎉 That's It!
 
 The agent is now running. You'll receive:
-- Email notifications to: tejas.amle71@gmail.com
-- WhatsApp messages to: +91 9910282204
+- Email notifications to: your_email@gmail.com
+- WhatsApp messages to: your configured number
 
 ## Monitoring
 

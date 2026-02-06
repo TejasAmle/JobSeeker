@@ -40,12 +40,12 @@ Then edit `.env` and fill in your credentials:
 
 ```env
 # Gmail Configuration (Required)
-GMAIL_ADDRESS=tejas.amle71@gmail.com
+GMAIL_ADDRESS=your_email@gmail.com
 GMAIL_APP_PASSWORD=your_16_char_app_password
 
 # WhatsApp (Optional)
 WHATSAPP_ENABLED=true
-WHATSAPP_NUMBER=919910282204
+WHATSAPP_NUMBER=your_whatsapp_number_with_country_code
 
 # Other settings (defaults are fine)
 AGENT_ENABLED=true
@@ -123,7 +123,7 @@ Each job is scored out of 100 based on:
 
 ## 📁 Company Watchlist
 
-Place an Excel file named `PM_Companies_Comprehensive_Tejas.xlsx` in the root directory with these columns:
+Place an Excel file named `companies_watchlist.xlsx` in the root directory with these columns:
 
 | Column | Description | Required |
 |--------|-------------|----------|
@@ -279,10 +279,7 @@ MIT
 
 ## 👨‍💻 Author
 
-**Tejas**
-- Experience: 4+ years in Product Management
-- Current Role: Product Manager at LambdaTest
-- Email: tejas.amle71@gmail.com
+Built by a Product Manager for Product Managers 🚀
 
 ---
 

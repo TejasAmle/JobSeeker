@@ -1,7 +1,7 @@
 # Job Hunter Agent - Development Log
 
 ## Project Overview
-Autonomous job hunting agent that scrapes job boards for Product Manager roles matching Tejas's profile and sends notifications via Email and WhatsApp.
+Autonomous job hunting agent that scrapes job boards for Product Manager roles and sends notifications via Email and WhatsApp.
 
 ## Implementation Status
 
@@ -65,7 +65,7 @@ Autonomous job hunting agent that scrapes job boards for Product Manager roles m
   - 30+ day repost detection
 
 - [x] Excel Watchlist Reader (src/data/watchlist.js)
-  - Reads PM_Companies_Comprehensive_Tejas.xlsx
+  - Reads companies_watchlist.xlsx
   - Hot-reload every 6 hours
   - Priority-based company scoring
   - Sync to database
@@ -202,7 +202,7 @@ JobSearch/
 ├── .gitignore
 ├── CLAUDE.md (this file)
 ├── promptPrd.md (original requirements)
-├── PM_Companies_Comprehensive_Tejas.xlsx (company watchlist)
+├── companies_watchlist.xlsx (company watchlist)
 ├── src/
 │   ├── config.js ✅
 │   ├── index.js (pending)
@@ -283,11 +283,10 @@ JobSearch/
 
 ## 🎉 MVP Complete - Ready to Run!
 
-### Immediate Next Steps for Tejas
+### Immediate Next Steps
 
 1. **Install Dependencies**
    ```bash
-   cd "/Users/tejasa/Tejas Personal/Projects/JobSearch"
    npm install
    ```
 

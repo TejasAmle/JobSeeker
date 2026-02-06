@@ -22,7 +22,7 @@ services:
       - key: WHATSAPP_ENABLED
         value: true
       - key: WHATSAPP_NUMBER
-        value: 919910282204
+        sync: false  # Set this in Render dashboard
       - key: KEEP_ALIVE_ENABLED
         value: true
       # Secrets (set these in Render dashboard):
