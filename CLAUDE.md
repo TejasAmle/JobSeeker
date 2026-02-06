@@ -179,7 +179,7 @@ Autonomous job hunting agent that scrapes job boards for Product Manager roles a
 
 ```env
 # Critical (must be filled by user):
-GMAIL_ADDRESS=tejas.amle71@gmail.com
+GMAIL_ADDRESS=your_email@gmail.com
 GMAIL_APP_PASSWORD=[Generate at myaccount.google.com/apppasswords]
 
 # Optional:
@@ -188,7 +188,7 @@ NODE_ENV=production
 LOG_LEVEL=info
 PORT=3000
 WHATSAPP_ENABLED=true
-WHATSAPP_NUMBER=919910282204
+WHATSAPP_NUMBER=your_whatsapp_number_with_country_code
 SCRAPE_INTERVAL_MINUTES=30
 NOTIFY_THRESHOLD=60
 MIN_SALARY_LPA=25
